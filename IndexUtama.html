@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum PDW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>LE SSERAFIM</h1>
+    <ul>
+        <li>
+            <h2 id="gambar">Member</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="LE SSERAFIM.jpg" alt="pic 1" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <h3>Nama Member</h3>
+                    <button id="btnDetail" class="btn btn-primary">Klik untuk Detail</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <h2 id="video">Video</h2>
+            <hr>
+            <video controls loop autoplay muted preload="auto">
+                <source src="LE SSERAFIM (르세라핌) 'Smart'.mp4" type="video/mp4">
+                <track kind="captions" src="LE SSERAFIM (르세라핌) 'Smart'.mp4" srclang="en" label="English">
+            </video>
+        </li>
+        <li>
+            <h3 id="audio">Audio</h3>
+            <hr>
+            <audio controls>
+                <source src="Smart.mp3" type="audio/mp3">
+            </audio>
+        </li>
+    </ul>
+
+    <script>
+        // Ambil tombol
+        var btnDetail = document.getElementById('btnDetail');
+
+        // Tambahkan event listener untuk tombol
+        btnDetail.addEventListener('click', function() {
+            // Buka halaman baru dengan URL yang ditentukan
+            window.open('detail_anggota.html', '_blank');
+        });
+    </script>
+</body>
+
+</html>
